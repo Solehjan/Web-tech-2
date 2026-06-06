@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пиццерия - Оформление заказа</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="left-panel">
+            <div class="pizza-grid">
+                <div class="pizza-card selected" data-type="Пепперони" data-price="800" data-calories="400">
+                    <img src="img/Peperoni.jpg" alt="Пепперони">
+                    <h3>Пепперони</h3>
+                </div>
+                <div class="pizza-card" data-type="Маргарита" data-price="500" data-calories="300">
+                    <img src="img/Margarita.jpg" alt="Маргарита">
+                    <h3>Маргарита</h3>
+                </div>
+                <div class="pizza-card" data-type="Баварская" data-price="700" data-calories="450">
+                    <img src="img/Bovarskaya.jpg" alt="Баварская">
+                    <h3>Баварская</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="section-header">
+                <h2>Выберите размер</h2>
+                <span class="info-icon">ⓘ</span>
+            </div>
+            
+            <div class="size-toggle">
+                <button class="size-btn active" data-size="Маленькая">Маленькая</button>
+                <button class="size-btn" data-size="Большая">Большая</button>
+            </div>
+
+            <div class="section-header">
+                <h2>Добавить по вкусу</h2>
+            </div>
+
+            <div class="toppings-grid">
+                <div class="topping-card" data-topping="сырный борт">
+                    <img src="img/Сырный_ботик.png" alt="Сырный бортик">
+                    <p>Сырный бортик</p>
+                    <span class="topping-price">от 150 ₽</span>
+                </div>
+                <div class="topping-card" data-topping="сливочная моцарелла">
+                    <img src="img/сливочная_моцарела.jpg" alt="Сливочная моцарелла">
+                    <p>Сливочная моцарелла</p>
+                    <span class="topping-price">50 ₽</span>
+                </div>
+                <div class="topping-card" data-topping="чедер и пармезан">
+                    <img src="img/Чеддер_пфрмезан.jpg" alt="Чеддер и пармезан">
+                    <p>Чеддер и<br>пармезан</p>
+                    <span class="topping-price">от 150 ₽</span>
+                </div>
+            </div>
+
+            <button id="addToCartBtn" class="cart-btn">
+                Добавить в корзину за<br>
+                <span id="btnPrice">0 ₽</span> (<span id="btnCalories">0 кКалл</span>)
+            </button>
+        </div>
+    </div>
+
+    <script src="js/Topping.js"></script>
+    <script src="js/Pizza.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
