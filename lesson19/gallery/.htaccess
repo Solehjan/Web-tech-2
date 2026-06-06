@@ -1,0 +1,11 @@
+# Запрет прямого доступа к папкам uploads и thumbs
+RedirectMatch 403 ^/(uploads|thumbs)/.*$
+
+# Запрет просмотра списка файлов в папках
+Options -Indexes
+
+# Защита файла .htaccess
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
